@@ -8,9 +8,14 @@ namespace CodingStuff
 
     class LeetCode
     {
+        public IList<int> InorderTraversal(TreeNode root)
+        {
+            ThreeNode current = root;
+            return null;
+        }
         public bool Exist(char[][] board, string word)
         {
-            
+
             return false;
         }
         public bool palindrome(int num)
