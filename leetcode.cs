@@ -10,7 +10,7 @@ namespace CodingStuff
     {
         public IList<int> InorderTraversal(TreeNode root)
         {
-            ThreeNode current = root;
+            TreeNode current = root;
             return null;
         }
         public bool Exist(char[][] board, string word)

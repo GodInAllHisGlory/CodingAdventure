@@ -8,7 +8,7 @@ namespace CodingStuff
 
     static void Main(string[] args)
     {
-      Console.WriteLine(new LeetCode().palindrome(1221));
+      Console.WriteLine(new LeetCode().InorderTraversal());
     }
 
   }
