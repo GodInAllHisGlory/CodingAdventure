@@ -2,17 +2,31 @@ using System;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
+using System.Xml.XPath;
 
 namespace CodingStuff
 {
 
     class LeetCode
     {
-        public IList<int> InorderTraversal(TreeNode root)
+        public List<int> InorderTraversal(TreeNode root)
         {
-            TreeNode current = root;
-            return null;
+            List<int> res = new List<int>();
+            helper(root, res);
+            return res;
         }
+
+        public void helper(TreeNode root, List<int> res)
+        {
+            if (root != null)
+            {
+                helper(root.left, res);
+                res.Add(root.val);
+                helper(root.right, res);
+            }
+        }
+
+
         public bool Exist(char[][] board, string word)
         {
 
@@ -80,5 +94,6 @@ namespace CodingStuff
             this.next = next;
         }
     }
+
 
 }
